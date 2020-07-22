@@ -8,8 +8,6 @@ Filecoin and Ethereum-based NFT Snapshot Bot for Twitter threads
 https://twitter.com/EthTimestamp
 <br>
 
-This project was built as a Wave 2 [Filecoin dev grant](https://github.com/filecoin-project/devgrants#filecoin-devgrants).
-
 ## Project Description
 
 A decentralized app / bot that will support creating Twitter thread rollup snapshots that can be turned into tradable Ethereum NFTs (non-fungible tokens) with the data stored on Filecoin. 
@@ -17,6 +15,8 @@ A decentralized app / bot that will support creating Twitter thread rollup snaps
 Twitter thread rollup and timestamp bots do not currently utilize distributed, decentralised storage, such as the Filecoin network nor do they allow creators to turn them into tradable NFTs (non-fungible tokens) defined by Ethereum ERC-721.
 
 Existing bots / solutions traditionally rely on centralised (hidden) storage and therefore are limited in what can be done with the thread that is snapshotted. Filecoin also adds to IPFS verifiable proof of storage.
+
+This project was built as a Wave 2 [Filecoin dev grant](https://github.com/filecoin-project/devgrants#filecoin-devgrants).
 
 ## Architecture
 
@@ -28,7 +28,7 @@ Existing bots / solutions traditionally rely on centralised (hidden) storage and
 
 ## Source code
 
-- The source code is available at https://github.com/blockrockettech/NFTSnapshot-Bot/
+The source and more project info is available at https://github.com/blockrockettech/NFTSnapshot-Bot/
 
 ## License
 
