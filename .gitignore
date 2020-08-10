@@ -1,0 +1,14 @@
+.DS_Store
+
+bot/node_modules/
+smart-contracts/build/
+smart-contracts/node_modules/
+/bot/_keys/
+/bot/_keys/*
+.env
+NFTSnapshot-Bot.iml
+.idea
+/dapp/.env.production
+/dapp/static/sw.js
+NFT-Snapshot-Bot-shipyard-version.iml
+package-lock.json

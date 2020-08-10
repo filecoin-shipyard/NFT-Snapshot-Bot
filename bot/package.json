@@ -1,0 +1,25 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Twitter thread rollup bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js"
+  },
+  "author": "BlockRocket.tech",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/firestore": "^3.7.5",
+    "@textile/powergate-client": "0.2.0",
+    "axios": "^0.19.2",
+    "buffer": "^5.6.0",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
+    "puppeteer": "^3.0.4",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

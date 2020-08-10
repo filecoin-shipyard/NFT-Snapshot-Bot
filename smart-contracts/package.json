@@ -1,0 +1,21 @@
+{
+  "name": "smart-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "truffle compile && npx mocha --exit --recursive test",
+    "fast-test": "npx mocha --exit --recursive test"
+  },
+  "author": "BlockRocket.tech",
+  "license": "MIT",
+  "dependencies": {
+    "@blockrocket/utils": "^1.0.8",
+    "@openzeppelin/contracts": "^3.0.1",
+    "@openzeppelin/test-environment": "^0.1.4",
+    "@openzeppelin/test-helpers": "^0.5.5",
+    "@truffle/debug-utils": "^4.1.1",
+    "@truffle/hdwallet-provider": "^1.0.34",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "truffle-plugin-verify": "^0.3.10"
+  }
+}

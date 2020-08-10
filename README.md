@@ -1,39 +1,32 @@
-# NFT-Snapshot-Bot
-Filecoin and Ethereum-based NFT Snapshot Bot for Twitter threads
+# NFTSnapshot-Bot
+Filecoin and ethereum-based twitter thread tokenisation bot.
 
-[Demo video](https://drive.google.com/file/d/1oqAP_7B9iGms1IZ-nz-2wYP_yofVFjGu/view?usp=sharing) of the working application
+Simply reply to a twitter thread with @EthTimestamp and wait for the bot to let you know when the thread has been rolled up ready for purchase.
 
-<br>
-<img align="center" src="EthTimeStamp.jpg" width=350>
-https://twitter.com/EthTimestamp
-<br>
+## Project breakdown
 
-## Project Description
+* [documentation](./documentation) - Some high level docs on how it works
+* [bot](./bot) - A twitter bot which rolls up a twitter thread ready for tokenising
+* [smart-contracts](./smart-contracts) - The ETH smart contracts which are responsible for issuing the NFTs
+* [dapp](./dapp) - An SSR webapp where a user purchase and tokenise rolled up threads
+* [powergate](https://github.com/textileio/powergate) - Getting powergate going
 
-A decentralized app / bot that will support creating Twitter thread rollup snapshots that can be turned into tradable Ethereum NFTs (non-fungible tokens) with the data stored on Filecoin. 
+A demo fo the working application can be seen [here](https://drive.google.com/file/d/1oqAP_7B9iGms1IZ-nz-2wYP_yofVFjGu/view?usp=sharing)
 
-Twitter thread rollup and timestamp bots do not currently utilize distributed, decentralised storage, such as the Filecoin network nor do they allow creators to turn them into tradable NFTs (non-fungible tokens) defined by Ethereum ERC-721.
+Run `npm run start` to run the bot locally.
 
-Existing bots / solutions traditionally rely on centralised (hidden) storage and therefore are limited in what can be done with the thread that is snapshotted. Filecoin also adds to IPFS verifiable proof of storage.
+Create a `.env` file populated with the correct env vars (see `.env.example`).
 
-This project was built as a Wave 2 [Filecoin dev grant](https://github.com/filecoin-project/devgrants#filecoin-devgrants).
+### User Journey
+ 
+![user sequence](documentation/user-sequence.png) 
 
-## Architecture
+### General architecture
 
-![Architecture](https://github.com/blockrockettech/NFTSnapshot-Bot/blob/master/documentation/architecture-stack.png)
-
-## User Flow
-
-![User Sequence](https://github.com/blockrockettech/NFTSnapshot-Bot/blob/master/documentation/user-sequence.png)
-
-## Source code
-
-The source and more project info is available at https://github.com/blockrockettech/NFTSnapshot-Bot/
+![architecture](documentation/architecture-stack.png) 
 
 ## License
 
-All linked repos for this project are dual-licensed under
+This work is dual-licensed under Apache 2.0 and MIT.
 
-[MIT](https://github.com/filecoin-project/lotus/blob/master/LICENSE-MIT)
-
-[Apache 2.0](https://github.com/filecoin-project/lotus/blob/master/LICENSE-APACHE)
+`SPDX-License-Identifier: Apache-2.0 OR MIT`

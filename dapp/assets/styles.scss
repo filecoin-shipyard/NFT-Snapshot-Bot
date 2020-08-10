@@ -1,0 +1,199 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap');
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: $purple;
+$primary-invert: findColorInvert($primary);
+
+$primary-light: lighten(#5165FF, 25%);
+$primary-light-invert: findColorInvert($primary-light);
+
+$secondary: #545454;
+$secondary-invert: findColorInvert($secondary);
+
+// origin-black
+$black: #210B2C;
+
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$pinkish: #e0215d;
+$pinkish-invert: findColorInvert($pinkish);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "primary-light": ($primary-light, $primary-light-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert),
+  "twitter": ($twitter, $twitter-invert),
+  "pinkish": ($pinkish, $pinkish-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+$family-primary: 'Roboto', sans-serif;
+$family-secondary: 'Playfair Display', serif;
+
+$body-background-color: $dark;
+$footer-color: $pinkish;
+
+$radius: 0;
+
+// buttons etc
+$control-radius: 0;
+
+$box-radius: 0;
+$box-shadow: 0;
+
+$title-size: $size-6;
+
+a.is-muted-7 {
+  color: $grey;
+  font-size: $size-7 !important;
+}
+
+.is-muted-7 {
+  color: $grey;
+  font-size: $size-7 !important;
+}
+
+.is-muted {
+  color: $grey !important;
+}
+
+.navbar-item {
+  font-family: $family-secondary;
+}
+
+.card-image-cover {
+  object-fit: cover !important;
+  height: 18rem !important;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+footer {
+  a {
+    color: $grey-light;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+//////////////// MARGIN / PADDING HELPER ///////////////////
+$sizes: (
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+);
+$positions: (
+  "top",
+  "left",
+  "bottom",
+  "right"
+);
+$bulmaSizes: (
+  $size-1,
+  $size-2,
+  $size-3,
+  $size-4,
+  $size-5,
+  $size-6,
+  $size-7
+);
+$i: 1;
+@each $size in $sizes {
+  $sizee: nth($bulmaSizes, $i);
+  $i: $i+1;
+  .has-margin-#{$size} {
+    margin: $sizee !important;
+  }
+  .has-negative-margin-#{$size} {
+    margin: -$sizee !important;
+  }
+  .has-padding-#{$size} {
+    padding: $sizee !important;
+  }
+  @each $position in $positions {
+    .has-margin-#{$position}-#{$size} {
+      margin-#{$position}: $sizee !important;
+    }
+    .has-padding-#{$position}-#{$size} {
+      padding-#{$position}: $sizee !important;
+    }
+    .has-negative-margin-#{$position}-#{$size} {
+      margin-#{$position}: -$sizee !important;
+    }
+  }
+}
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// pulsing opacity animation
+@keyframes flickerAnimation {
+  0% {
+    opacity: .85;
+  }
+  50% {
+    opacity: .15;
+  }
+  100% {
+    opacity: .85;
+  }
+}
+
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: .85;
+  }
+  50% {
+    opacity: .15;
+  }
+  100% {
+    opacity: .85;
+  }
+}
+
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: .85;
+  }
+  50% {
+    opacity: .15;
+  }
+  100% {
+    opacity: .85;
+  }
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: .85;
+  }
+  50% {
+    opacity: .15;
+  }
+  100% {
+    opacity: .85;
+  }
+}
