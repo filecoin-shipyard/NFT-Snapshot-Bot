@@ -1,4 +1,11 @@
 # NFTSnapshot-Bot
+
+## Status
+
+This repository is in a **frozen** state. It is not being maintained or kept in sync with the tools and libraries it builds on. Even though work on this repository has been **shelved**, anyone interested in updating or maintaining this project should express their interest on one Filecoin community conversation mediums: <https://github.com/filecoin-project/community#join-the-community>.
+
+---
+
 Filecoin and ethereum-based twitter thread tokenisation bot.
 
 Simply reply to a twitter thread with @EthTimestamp and wait for the bot to let you know when the thread has been rolled up ready for purchase.
